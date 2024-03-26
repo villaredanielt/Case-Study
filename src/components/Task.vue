@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     totalTask() {
-      return this.tasks.length;
+      return this.tasks.filter(task => !task.completed).length;
     }
   }
 };
